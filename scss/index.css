@@ -1,0 +1,946 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,900;1,400;1,500;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Roboto+Mono:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,900;1,400;1,500;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Roboto+Mono:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,400;0,900;1,400;1,500;1,900&display=swap');
+*{
+ padding: 0%;
+ margin: 0%;
+ box-sizing: border-box;
+ overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-attachment: fixed;
+}
+/* navbar section css */
+nav{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+/* media query mobile device break downs */
+@media (min-width: 300px) and (max-width: 379px){
+    nav{ 
+        display: block !important;
+        width: auto;
+        height: auto;
+        position: relative;
+        left: 10px;
+        font-size: 1.7em;
+    }
+}
+/* media query mobile device break downs */
+@media (min-width: 380px) and (max-width: 480px){
+    nav{
+        display: block !important;
+        width: auto;
+        height: auto;
+        font-size: 1.7em;
+    }
+}
+.logo img{
+    max-width: 120px;
+    height: auto;
+}
+.menu-items {
+    display: flex;
+    gap: 2em;
+ flex-wrap: wrap;
+}
+/* media query mobile device break downs navbar*/
+@media (min-width: 320px) and (max-width: 480px){
+    .menu-items {
+        display: flex !important;
+        flex-direction: column !important;
+
+    }
+}
+/* media query large mobile device break downs navbar navbar menu*/
+@media (min-width: 560px) and (max-width: 670px){
+    .menu-items {
+        margin-bottom: 20px;
+    }
+}
+.menu-items a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.button-login-reister{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.button-login-reister button{
+    padding: .7em;
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+    width: 9em;
+    border: 2px solid;
+    border-radius: 8px;
+}
+.button-login-reister #signin{
+    background-color: cadetblue;
+}
+ .button-login-reister #register{
+    background-color: rgb(124, 219, 175);
+}
+
+/* dog section images and titles */
+.parent-mainpage-titles{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(247, 247, 207);
+    border: 0px solid  rgb(236, 236, 169);
+    border-radius: 0px 400px 100px 0px;
+    padding: 2em;
+}
+/* media querry main pages 200px to 800px resolution */
+@media(min-width: 200px) and (max-width: 800px){
+    .parent-mainpage-titles{
+     width: 100vw !important;
+     background-color: rgb(247, 247, 207);
+     border-radius: 0%;
+    }
+}
+/* main section dog images and quote section */
+.child-mainpage-titles{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+}
+@media (min-width: 200px) and (max-width: 794px){
+  .child-mainpage-titles{
+   margin-bottom: 2em;
+   }
+}
+.child-mainpage-titles #exploremore{
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(35, 141, 145);
+    padding: .7em;
+    width: 10em;
+    border: 2px solid;
+    border-radius: 8px;
+    text-transform:uppercase;
+    cursor: pointer;
+}
+.child-mainpage-images{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(243, 220, 92);
+    border-radius: 50%;
+}
+.child-mainpage-images img{
+    border-radius: 50%;
+}
+
+/* service category section */
+.service{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3em;
+}
+.services-heading{
+    position: relative;
+    left: 9%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/* media query for mobile devices service heading section*/
+@media (min-width: 300px) and (max-width: 480px){
+    .services-heading h2{
+        overflow: hidden;
+    }
+}
+.services-heading h2{
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+.service hr{
+    width: 200px;
+    background-color:  rgb(1, 84, 87);
+    font-size: .5em;
+    border: 2px solid rgb(1, 84, 87);
+}
+.services-provide{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 3em;
+}
+/* media query for tablet view service provide section*/
+@media (min-width:760px) and (max-width: 800px){
+    .services-provide{
+        padding: 2em;
+    }
+}
+/* grooming div */
+.grooming{
+    padding: 2em;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid rgb(44, 125, 128);
+    border-radius: 40px;
+}
+/* media query for mobile devices grooming section*/
+@media (min-width: 250px) and (max-width: 531px){
+    .grooming{
+        margin-bottom: 20px;
+    }
+}
+/* media query for mobile and tablet view grooming section*/
+@media (min-width: 532px) and (max-width: 750px){
+    .grooming{
+        margin-bottom: 20px;
+    }
+}
+.grooming img{
+    width: 150px;
+}
+/* healthcare div */
+.healthcare{
+    padding: 2em;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid rgb(44, 125, 128);
+    border-radius: 40px;
+    background: rgb(224,224,149);
+    background: linear-gradient(90deg, rgba(224,224,149,1) 0%, rgba(236,226,160,1) 9%, rgba(197,242,169,1) 100%);
+}
+
+/* media query for mobile view and large mobile view health care section*/
+@media (min-width: 250px) and (max-width: 531px){
+    .healthcare{
+        margin-bottom: 20px;
+    }
+}
+
+/* media query for larger mobile and tablet view health care section*/
+@media (min-width: 532px) and (max-width: 750px){
+    .healthcare{
+        margin-bottom: 20px;
+    }
+}
+.healthcare img{
+    width: 150px;
+}
+.daycare{
+    padding: 2em;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid rgb(44, 125, 128);
+    border-radius: 40px;
+}
+
+/* media query for small mobile device and large mobile devices  day care section*/
+@media (min-width: 250px) and (max-width: 531px){
+    .daycare{
+        margin-bottom: 20px;
+    }
+}
+
+/* media query for large mobile and tablet view devices day care section */
+@media (min-width: 532px) and (max-width: 750px){
+    .daycare{
+        margin-bottom: 20px;
+    }
+}
+.daycare img{
+    width: 150px;
+}
+.training{
+    padding: 2em;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid rgb(44, 125, 128);
+    border-radius: 40px;
+    background: rgb(224,224,149);
+    background: linear-gradient(90deg, rgba(224,224,149,1) 0%, rgba(236,226,160,1) 9%, rgba(197,242,169,1) 100%);
+}
+
+/* media query for tablet view training section*/
+@media (min-width: 750px) and (max-width: 970px){
+    .training{
+        margin-top: 20px;
+    }
+}
+.training img{
+    width: 150px;
+}
+.dogs-do-speak{
+    width: auto;
+    height: auto;
+
+}
+.dog-image-quote{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10em;
+}
+
+/*media query for small devices dog paragraph section */
+@media (min-width: 320px) and (max-width: 480px){
+    .dog-image-quote{
+        display: block !important;
+        margin-left: 5px;
+    }
+}
+.golden-retriever{
+    width: auto;
+    height: auto;
+    background-color: rgb(212, 217, 226);
+    border: 1px solid rgb(186, 206, 243);
+    border-radius: 224px 135px 300px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.dog-quote{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.dog-quote h4{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.4em;
+    overflow: hidden;
+    font-weight: bolder;
+}
+.dog-quote p{
+    color: grey;
+}
+.parent-dognutrients{
+    width: auto;
+    height: auto;
+    padding: 3em;
+}
+.dognutirents{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    left: 20%;
+    margin-top: 5em;
+}
+@media (min-width: 320px) and (max-width: 379px){
+    .dognutirents{
+        display: block !important;
+        position: relative;
+        left: 20%;
+    }
+}
+@media (min-width: 380px) and (max-width: 419px){
+    .dognutirents{
+        display: block !important;
+        position: relative;
+        left: 25%;
+    }
+}
+@media (min-width: 420px) and (max-width: 479px){
+    .dognutirents{
+        display: block !important;
+        position: relative;
+        left: 28%;
+    }
+}
+@media (min-width: 480px) and (max-width: 564px){
+    .dognutirents{
+        display: block !important;
+        position: relative;
+        left: 31%;
+    }
+}
+@media (min-width: 565px) and (max-width: 595px){
+    .dognutirents{
+        display: block !important;
+        position: relative;
+        left: 33%;
+    }
+}
+@media (min-width: 596px) and (max-width: 630px){
+    .dognutirents{
+        display: block !important;
+        position: relative;
+        left: 33%;
+    }
+}
+@media (min-width: 631px) and (max-width: 650px){
+    .dognutirents{
+        display: block !important;
+        position: relative;
+        left: 33%;
+    }
+}
+@media (min-width: 651px) and (max-width: 680px){
+    .dognutirents{
+        display: block !important;
+        position: relative;
+        left: 33%;
+    }
+}
+@media (min-width: 681px) and (max-width: 699px){
+    .dognutirents{
+        display: block !important;
+        position: relative;
+        left: 35%;
+    }
+}
+.dognutirents hr{
+    width: 150px;
+    background-color:  rgb(1, 84, 87);
+    font-size: .5em;
+    border: 2px solid rgb(1, 84, 87);
+}
+.discountproduct{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media (min-width: 320px) and (max-width: 695px){
+    .discountproduct{
+        display: flex !important;
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+    }
+}
+.discountproduct h6::after{
+    font-weight: bolder;
+}
+.discountproduct span::before{
+    font-weight: bold;
+}
+.discountproduct #viewmore{
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(4, 56, 58);
+    padding: .7em;
+    width: 10em;
+    border: 2px solid;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.parent-drools-canin-pedigree{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    margin-top: 5em;
+}
+/* drools div */
+.drools{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+@media (min-width: 300px) and (max-width: 695px){
+   .drools{
+    margin-bottom: 2em;
+    }
+}
+@media (min-width: 300px) and (max-width: 695px){
+    .pedigree{
+     margin-top: 2em;
+     }
+ }
+.drools h7{
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.drools p{
+    color: rgb(138, 136, 136);
+}
+.drools img{
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+.drools #buynow{
+    font-size: 1em;
+    font-weight: bold;
+    padding: .7em;
+    width: 10em;
+    border: 2px solid rgb(35, 141, 145);
+    padding: .7em;;
+    border-radius: 8px;
+    text-transform:uppercase;
+    cursor: pointer;
+    color:  rgb(35, 141, 145);
+    background-color: none;
+}
+/* canin div */
+.canin{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.canin h7{
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.canin img{
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+.canin p{
+    color: rgb(138, 136, 136);
+}
+.canin #buynow{
+    font-size: 1em;
+    font-weight: bold;
+    padding: .7em;
+    width: 10em;
+    border: 2px solid rgb(35, 141, 145);
+    padding: .7em;;
+    border-radius: 8px;
+    text-transform:uppercase;
+    cursor: pointer;
+    color:  rgb(35, 141, 145);
+    background-color: none;
+}
+/* pedigree div */
+.pedigree{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pedigree h7{
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.pedigree img{
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+.pedigree p{
+    color: rgb(138, 136, 136);
+}
+.pedigree #buynow{
+    font-size: 1em;
+    font-weight: bold;
+    padding: .7em;
+    width: 10em;
+    border: 2px solid rgb(35, 141, 145);
+    padding: .7em;;
+    border-radius: 8px;
+    text-transform:uppercase;
+    cursor: pointer;
+    color:  rgb(35, 141, 145);
+    background-color: none;
+}
+.dog-walking{
+    width: 100vw;
+    height: auto;
+    background-color: rgb(224, 236, 241);
+    
+}
+/* girl hugging css section and html  */
+.parent-dog-walking{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5em;
+}
+.child-dog-walking-qoute{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.child-dog-walking-qoute h8{
+   font-size: 2em;
+}
+.child-dog-walking-qoute p{
+    color: grey;
+}
+.parent-dog-walking .child-dog-walking-qoute #exploremore{
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(4, 56, 58);
+    padding: .7em;
+    width: 10em;
+    border: 2px solid;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.child-dog-walking{
+    width: auto;
+    height: auto;
+}
+.child-dog-walking img{
+    object-fit: cover;
+}
+.customer-review{
+    width: 100vw;
+    height: auto;
+    padding: 3em;
+}
+/* happy customer section */
+.happy-customer{
+ position: relative;
+ left: 10%;
+}
+.happy-customer h9{
+    font-size: 2em;
+    font-weight: bolder;
+}
+.happy-customer hr{
+    width: 150px;
+    border: 2px solid rgb(4, 56, 58);
+}
+.parent-customer-review{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+   margin-top: 3em;
+}
+/* review section css */
+.child-customer-review-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 300px;
+    border: 0px solid ;
+    border-radius: 20px 20px 0px 0px;
+}
+.customer-images{
+    background-color: yellow;
+}
+.child-customer-review-one .customer-images img{
+    width: 400px;
+    object-fit: cover;
+}
+.customer-quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: auto;
+    background-color:  rgb(4, 56, 58);
+    width: 100vw;
+    padding: 1em;
+}
+.customer-quote h10{
+    font-size: 1.6em;
+    font-weight: bolder;
+    color: rgb(243, 243, 182);
+}
+.customer-quote blockquote{
+    color: white;
+}
+.child-customer-review-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 300px;
+    border: 0px solid ;
+    border-radius: 20px 20px 0px 0px;
+}
+.child-customer-review-two .customer-images{
+    background-color: pink;
+}
+.child-customer-review-two .customer-images img{
+    width: 400px;
+    object-fit: cover;
+}
+
+.child-customer-review-three{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 300px;
+    border: 0px solid ;
+    border-radius: 20px 20px 0px 0px;
+}
+.child-customer-review-three .customer-images{
+    background-color: rgb(204, 173, 245);
+}
+.child-customer-review-three .customer-images img{
+    width: 400px;
+    object-fit: cover;
+}
+
+.star-icon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.star-icon i{
+    color: goldenrod;
+    font-size: 1.6em;
+}
+.star-icon span{
+color: white;
+font-size: 1em;
+
+}
+/* review section end */
+
+/* media  query start */
+@media (min-width: 320px) and (max-width: 695px){
+    .child-customer-review-one{
+     margin-bottom: 1em;
+   }
+    }
+
+@media (min-width: 320px) and (max-width: 995px){
+   .child-customer-review-three{
+    margin-top: 1em;
+  }
+   }
+.explore-more-section{
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 3em;
+}
+.explore-more-section #exploremore{
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(4, 56, 58);
+    padding: .7em;
+    width: 10em;
+    border: 2px solid;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* image carousel sections */
+.image-gallery {
+    width: 100vw;
+    height: auto;
+}
+
+.healthypets{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+footer{
+    width: 100vw;
+    height: auto;
+    background-color:  rgb(35, 141, 145);
+    margin-top: 10em;
+}
+/* footer company logo */
+.footer-company-logo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 10em;
+    padding-right: 10em;
+    margin-top: 5em;
+}
+/* footer company logo media query */
+@media (min-width: 320px) and (max-width: 480px){
+    .footer-logo{
+        padding-right: 0% !important;
+        display: block !important;
+        height: auto !important;
+        width: 100vw !important;
+    }
+}
+@media (min-width: 320px) and (max-width: 479px){
+    .footer-logo img{
+
+        height: auto !important;
+        width: 20vw !important;
+        padding-right: 0% !important;
+    }
+}
+@media (min-width: 480px) and (max-width: 520px){
+    .footer-logo img{
+     width: 40vw !important;
+     object-fit: fill;
+    }
+}
+/* footer comapny social icon media  */
+@media (min-width: 320px) and (max-width: 479px){
+    .social-icon{
+     display: flex !important;
+     margin-top: 2em;
+     align-items: center !important;
+     justify-content: flex-start !important;
+    }
+}
+@media (min-width: 480px) and (max-width: 574px){
+    .social-icon{
+     display: flex !important;
+     margin-top: 2em;
+     align-items: center !important;
+     justify-content: flex-start !important;
+    }
+}
+@media (min-width: 575px) and (max-width: 744px){
+    .social-icon{
+     display: flex !important;
+     margin-top: 2em;
+     align-items: center !important;
+     justify-content: flex-start !important;
+    }
+}
+.footer-logo img{
+  background-color: white;
+}
+
+/* footer social icons */
+.social-icon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+.social-icon i{
+font-size: 2.5em;
+color: white;
+}
+.footer-menu-items{
+width: auto;
+height: auto;
+margin-top: 5em;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+}
+/* footer menu items large and small mobile devices media query */
+@media (min-width: 300px) and (max-width: 399px){
+    .footer-menu-items{
+         display: block !important;
+     }
+  }
+@media (min-width: 400px) and (max-width: 479px){
+    .footer-list h11{
+         font-size: 1em !important;
+     }
+  }
+  @media (min-width: 400px) and (max-width: 479px){
+    .footer-list a{
+         font-size: .7em !important;
+     }
+  }
+@media (min-width: 480px) and (max-width: 575px){
+    .footer-list h11{
+         font-size: 1em !important;
+     }
+  }
+@media (min-width: 576px) and (max-width: 700px){
+  .footer-list h11{
+       font-size: 1em !important;
+   }
+}
+
+.footer-list{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ flex-wrap: wrap;
+}
+.footer-list h11{
+font-size: 1.8em;
+color: #fff;
+font-weight: 500;
+}
+.footer-list ul li a{
+color: silver;
+text-decoration: none;
+font-size: 1.2em;
+font-weight: 500;
+}
+
+/* copyrights claims sections */
+.copyrightclaims{
+    width: 100vw;
+    height: auto;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 2em;
+    padding: .7em;
+}
+.copyrightclaims strong{
+  text-align: center;
+}
