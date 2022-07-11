@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,900;1,400;1,500;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Roboto+Mono:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,900;1,400;1,500;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Roboto+Mono:ital,wght@1,300&family=Roboto:ital,wght@0,300;0,400;0,900;1,400;1,500;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@400;700;900&family=Source+Code+Pro&display=swap');
 *{
  padding: 0%;
  margin: 0%;
@@ -121,6 +123,11 @@ nav{
     flex-wrap: wrap;
     overflow-y: hidden;
 }
+.child-mainpage-titles h1{
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: 'Source Code Pro', monos;
+  }
 @media (min-width: 200px) and (max-width: 794px){
   .child-mainpage-titles{
    margin-bottom: 2em;
@@ -165,6 +172,7 @@ nav{
     flex-direction: column;
     flex-wrap: wrap;
 }
+
 /* media query for mobile devices service heading section*/
 @media (min-width: 300px) and (max-width: 480px){
     .services-heading h2{
@@ -172,9 +180,9 @@ nav{
     }
 }
 .services-heading h2{
-    font-weight: 600;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Mono', monospace;
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: 'Source Code Pro', monos;
 }
 .service hr{
     width: 200px;
@@ -210,6 +218,10 @@ nav{
     border: 2px solid rgb(44, 125, 128);
     border-radius: 40px;
 }
+.grooming h3{
+    font-weight: 900;
+    font-family: 'Source Code Pro', monos;
+}
 /* media query for mobile devices grooming section*/
 @media (min-width: 250px) and (max-width: 531px){
     .grooming{
@@ -240,7 +252,10 @@ nav{
     background: rgb(224,224,149);
     background: linear-gradient(90deg, rgba(224,224,149,1) 0%, rgba(236,226,160,1) 9%, rgba(197,242,169,1) 100%);
 }
-
+.healthcare h3{
+    font-weight: 900;
+    font-family: 'Source Code Pro', monos;
+}
 /* media query for mobile view and large mobile view health care section*/
 @media (min-width: 250px) and (max-width: 531px){
     .healthcare{
@@ -269,7 +284,10 @@ nav{
     border: 2px solid rgb(44, 125, 128);
     border-radius: 40px;
 }
-
+.daycare h3{
+    font-weight: 900;
+    font-family: 'Source Code Pro', monos;
+}
 /* media query for small mobile device and large mobile devices  day care section*/
 @media (min-width: 250px) and (max-width: 531px){
     .daycare{
@@ -300,7 +318,10 @@ nav{
     background: rgb(224,224,149);
     background: linear-gradient(90deg, rgba(224,224,149,1) 0%, rgba(236,226,160,1) 9%, rgba(197,242,169,1) 100%);
 }
-
+.training h3{
+    font-weight: 900;
+    font-family: 'Source Code Pro', monos;
+}
 /* media query for tablet view training section*/
 @media (min-width: 750px) and (max-width: 970px){
     .training{
@@ -325,8 +346,7 @@ nav{
     align-items: center;
     margin-top: 10em;
 }
-
-/*media query for small devices dog paragraph section */
+/* media query for mobile device */
 @media (min-width: 320px) and (max-width: 480px){
     .dog-image-quote{
         display: block !important;
@@ -352,12 +372,9 @@ nav{
     flex-wrap: wrap;
 }
 .dog-quote h4{
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 1.4em;
-    overflow: hidden;
+    font-size: 2em;
     font-weight: bolder;
+    font-family: 'Source Code Pro', monos;
 }
 .dog-quote p{
     color: grey;
@@ -438,6 +455,10 @@ nav{
         left: 35%;
     }
 }
+.dognutirents h4{
+    font-weight: 400;
+    font-family: 'Source Code Pro', monos;
+}
 .dognutirents hr{
     width: 150px;
     background-color:  rgb(1, 84, 87);
@@ -457,12 +478,17 @@ nav{
         flex-wrap: wrap !important;
     }
 }
-.discountproduct h6::after{
+.discountproduct #twentyfive{
+    font-size: 1.5em;
     font-weight: bolder;
+    font-family: 'Source Code Pro', monos;
 }
-.discountproduct span::before{
+.discountproduct #product{
+    font-family: 'Source Code Pro', monos;
+   }
+/* .discountproduct span::before{
     font-weight: bold;
-}
+} */
 .discountproduct #viewmore{
     font-size: 1em;
     color: white;
@@ -502,8 +528,8 @@ nav{
  }
 .drools h7{
     font-size: 1.5em;
-    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
+    font-family: 'Source Code Pro', monos;
 }
 .drools p{
     color: rgb(138, 136, 136);
@@ -537,8 +563,8 @@ nav{
 }
 .canin h7{
     font-size: 1.5em;
-    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
+    font-family: 'Source Code Pro', monos;
 }
 .canin img{
     width: 300px;
@@ -572,8 +598,8 @@ nav{
 }
 .pedigree h7{
     font-size: 1.5em;
-    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
+    font-family: 'Source Code Pro', monos;
 }
 .pedigree img{
     width: 300px;
@@ -616,7 +642,9 @@ nav{
     flex-wrap: wrap;
 }
 .child-dog-walking-qoute h8{
-   font-size: 2em;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Source Code Pro', monos;
 }
 .child-dog-walking-qoute p{
     color: grey;
@@ -652,6 +680,7 @@ nav{
 .happy-customer h9{
     font-size: 2em;
     font-weight: bolder;
+    font-family: 'Source Code Pro', monos;
 }
 .happy-customer hr{
     width: 150px;
@@ -693,7 +722,8 @@ nav{
 }
 .customer-quote h10{
     font-size: 1.6em;
-    font-weight: bolder;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
     color: rgb(243, 243, 182);
 }
 .customer-quote blockquote{
@@ -793,6 +823,7 @@ font-size: 1em;
     justify-content: center;
     font-size: 2em;
     font-weight: bold;
+    font-family: 'Source Code Pro', monos;
     flex-wrap: wrap;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -924,6 +955,7 @@ align-items: center;
 font-size: 1.8em;
 color: #fff;
 font-weight: 500;
+font-family: 'Roboto', sans-serif;
 }
 .footer-list ul li a{
 color: silver;
